@@ -92,7 +92,7 @@ def upload():
 		print("file_path:/n")
 		print(file_path)
 		# Make a prediction
-		prediction = model_predict(file_path, model)
+		prediction = model_predict(basepath, model)
 		if int(prediction) == 0 :
 			prediction1="NORMAL"
 		if int(prediction) == 1 :
