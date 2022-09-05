@@ -1,9 +1,9 @@
-Flask~=2.0.3
+Flask
 gunicorn
-numpy~=1.16.6
-opencv-python==4.6.0.66
-tensorflow~=1.14.0
-tensorflow-estimator==2.8.0
+numpy
+opencv-python
+tensorflow
+tensorflow-estimator
 Werkzeug
 
 
