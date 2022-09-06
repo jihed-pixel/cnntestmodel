@@ -92,10 +92,13 @@ def upload():
 		print("file_path:/n")
 		print(file_path)
 		# Make a prediction
-		prediction = model_predict(basepath, model)
+		prediction = model_predict(file_path, model)
 		if int(prediction) == 0 :
 			prediction1="NORMAL"
 		if int(prediction) == 1 :
 			prediction1="PNEUMONIA"
 		result=jsonify({'pred':prediction1  ,'pred2':"prediction" })
 		return result
+
+if __name__ == '__main__':
+	app.run(debug = True)
